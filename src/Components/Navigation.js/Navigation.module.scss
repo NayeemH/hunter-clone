@@ -1,0 +1,187 @@
+.navigation {
+  width: 100%;
+  height: 4rem;
+  background: var(--color-white);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  //   ///////////////////////////////////////////////////
+  //   ////////////////////// Links //////////////////////
+  .links {
+    width: calc(100% - 4rem);
+    height: 4rem;
+    padding-left: 2rem;
+    display: flex;
+    .link {
+      height: 4rem;
+      width: fit-content;
+      margin-right: 2rem;
+      display: flex;
+      align-items: center;
+      color: var(--color-grey-700);
+      a {
+        height: 4rem;
+        text-decoration: none;
+        color: var(--color-grey-700);
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        position: relative;
+        transition: 0.5s;
+        span {
+          margin-right: 8px;
+          margin-top: 5px;
+        }
+        &:hover::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          left: 0;
+          bottom: 0;
+          background: var(--color-grey-300);
+        }
+      }
+
+      a.activeLink {
+        color: var(--color-primary);
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          left: 0;
+          bottom: 0;
+          background: var(--color-primary);
+        }
+      }
+    }
+  }
+
+  //   /////////////////////////////////////////////////////////
+  //   ////////////////////// LEFT BLOCK //////////////////////
+  &__left {
+    width: 50%;
+    display: flex;
+    .brand {
+      height: 4rem;
+      width: 4rem;
+      border-right: 1px solid var(--color-border);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  //   /////////////////////////////////////////////////////////
+  //   ////////////////////// RIGHT BLOCK //////////////////////
+  &__right {
+    width: 50%;
+    height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    // links
+    .link {
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      font-size: 1.3rem;
+      margin-right: 1.5rem;
+      svg {
+        cursor: pointer;
+      }
+    }
+    // profile
+    .profile {
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      border-left: 1px solid var(--color-border);
+      cursor: pointer;
+      &:hover {
+        background: var(--color-grey-100);
+      }
+
+      .image {
+        width: 40px;
+        height: 40px;
+        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+        div {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: var(--color-grey-300);
+        }
+      }
+      .info {
+        h4 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 12px;
+          color: var(--color-grey-700);
+        }
+      }
+      .icon {
+        padding-left: 10px;
+        width: 5%;
+      }
+    }
+  }
+}
+
+//   //////////////////////////////////////////////////////////////
+//   ////////////////////// PROFILE OPTIONS //////////////////////
+.profileOptions {
+  width: 100%;
+  height: calc(100vh - 4rem);
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+  .wrapper {
+    width: 100%;
+    height: calc(100vh - 4rem);
+    position: relative;
+    overflow: hidden;
+    .container {
+      width: calc(18% - 1rem);
+      height: fit-content;
+      background: var(--color-white);
+      position: absolute;
+      right: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+      a {
+        text-decoration: none;
+        display: block;
+        padding: 1rem 1.7rem;
+        font-size: 14px;
+        color: var(--color-grey-700);
+        span {
+          margin-right: 10px;
+          margin-top: 5px;
+        }
+        &:not(:last-child) {
+          border-bottom: 1px solid var(--color-border);
+        }
+      }
+      .subscription {
+        padding: 1.5rem 1.7rem 1rem 1.7rem;
+        a {
+          display: block;
+          width: 100%;
+          padding: 0.7rem;
+          background: var(--color-primary);
+          color: var(--color-white);
+          text-align: center;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
