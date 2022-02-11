@@ -1,0 +1,51 @@
+.campaign {
+    margin-top: 40px;
+    width: 100%;
+    min-height: calc(100vh - 4rem - 40px);
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+  
+    &__options {
+      width: 15.67%;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      a {
+        width: 100%;
+        text-decoration: none;
+        border-radius: 5px;
+        color: var(--color-grey-800);
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 15px;
+        padding: 12px;
+        margin-bottom: 5px;
+        transition: all 0.15s ease-in-out;
+        &:hover {
+          background: var(--color-grey-200);
+        }
+      }
+      h3 {
+        color: var(--colors-grey-600);
+        font-size: 12px;
+        font-weight: 600;
+        margin-left: 12px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+      }
+      .down {
+        margin-top: 1.5rem;
+      }
+      a.activeLink {
+        background: var(--color-grey-200);
+        font-weight: 500;
+      }
+    }
+    &__operations {
+      width: 84.33%;
+      padding-left: 25px;
+    }
+  }
+  
