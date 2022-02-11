@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Switch } from "react-router-dom";
-import { Provider } from "react-redux";
 import { RouteWithSubRoutes } from "./Routes/RouteWithSubRoutes";
 
 import routes from "./Routes/routes";
