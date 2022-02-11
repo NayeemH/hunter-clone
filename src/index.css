@@ -1,12 +1,32 @@
 /* Open-Sans font CDN */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
 /* css variables */
 :root {
-  --color-primary: #f24822;
+  --color-secondary: #eef0f3;
+  --color-border: #ccc;
+  --color-hover: #f7f9fa;
   --color-dark: #222222;
   --color-white: #ffffff;
-  --font-os: 'Open Sans', sans-serif;
+
+  --colors-primary-200: #ffdcd1;
+  --colors-primary-300: #ffb59e;
+  --colors-primary-400: #fc9272;
+  --colors-primary-500: #ff784f;
+  --color-primary-600: #f24822;
+  --color-primary-700: #d44519;
+  --color-primary-800: #903013;
+  --color-grey-100: #f7f9fa;
+  --color-grey-200: #eef0f3;
+  --color-grey-300: #dfe3e8;
+  --color-grey-400: #c7cdd4;
+  --color-grey-500: #a1a7ad;
+  --color-grey-600: #707880;
+  --color-grey-700: #4c555e;
+  --color-grey-800: #3a444f;
+  --color-grey-900: #28323b;
+  --color-grey-1000: #1d262e;
+  --font-os: "Open Sans", sans-serif;
 }
 
 /* For all components */
@@ -19,7 +39,7 @@
 /* Setup html and body */
 body,
 html {
-  background: var(--color-white);
+  background: var(--color-grey-100);
   user-select: none;
   overscroll-behavior: none;
   font-family: var(--font-os);
