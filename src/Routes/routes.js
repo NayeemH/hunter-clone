@@ -1,5 +1,6 @@
 import Home from "../Pages/Home/Home";
 import Campaign from "../Pages/Campaign/Campaign";
+import CampaignActivity from "../Pages/CampaignActivity/CampaignActivity";
 import NotFound from "../Pages/NotFound/NotFound";
 
 
@@ -19,7 +20,7 @@ const routes = [
   // Test routes
   {
     path: "/campaigns/activity",
-    component: Campaign,
+    component: CampaignActivity,
     exact: true,
   },
 

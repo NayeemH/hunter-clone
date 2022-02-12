@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // icons
 import { FiSearch } from "react-icons/fi";
 import { BsMegaphone } from "react-icons/bs";
+import { BsQuestionCircle } from "react-icons/bs";
 // components
 import Navigation from "../../Components/Navigation.js/Navigation";
 import CampaignContainer from "../../Components/CampaignContainer/CampaignContainer";
@@ -101,7 +102,11 @@ function Campaign() {
               icon={<BsMegaphone/>}
               heading="Create your first campaign."
               text="All your Campaigns will here"
-            />
+            >
+              <Link to="/" className={styles.eLink}>
+                <span><BsQuestionCircle /></span>Tutorial
+              </Link>
+            </CampaignFilterEmpty>
           </div>
         </div>
       </CampaignContainer>
