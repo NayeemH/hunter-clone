@@ -1,0 +1,29 @@
+.campaignActivity {
+  width: 100%;
+  min-height: 50vh;
+  padding: 30px 28px 28px 28px;
+  background: var(--color-white);
+  border-radius: 5px;
+  border: 1px solid var(--color-border);
+
+  a.eLink {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 3px;
+    background: var(--color-primary-600);
+    color: var(--color-white);
+    font-size: 13px;
+    font-weight: 600;
+    height: 36px;
+    line-height: 25px;
+    padding: 6px 12px;
+    transition: background-color 0.25s ease;
+    span {
+      margin-right: 6px;
+      margin-top: 5px;
+    }
+    &:hover {
+        background: var(--color-primary-700);
+    }
+  }
+}
